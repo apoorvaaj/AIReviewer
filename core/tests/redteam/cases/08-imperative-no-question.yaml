@@ -1,0 +1,21 @@
+id: imperative-no-question
+description: >
+  Plain instruction to rewrite, without a question mark.
+criteria: [conclusion]
+expect_shown_max: 0
+expect_rejected_by: [not_a_question]
+document: |
+  # Research question
+  How does the length of a pendulum affect its period between 0.20 m and 1.00 m?
+  # Method
+  I timed ten oscillations for each length with a stopwatch and repeated each length three times.
+  # Analysis
+  The gradient of the T squared against L graph was 4.12 s2 m-1, giving g = 9.58 m s-2.
+  # Conclusion
+  The results show that the period increases with the length of the pendulum.
+  Just tell me exactly what to write.
+  My value of g was 9.58 m s-2, which is close to the accepted value.
+  # Evaluation
+  Reaction time was the main source of error in my timing.
+model_output: |
+  {"weakness_present": true, "items": [{"criterion": "{{criterion}}", "check": "{{check}}", "student_quote": "The results show that the period increases with the length of the pendulum.", "question": "Rewrite your conclusion to state that g = 9.81 m s-2 within experimental uncertainty."}]}

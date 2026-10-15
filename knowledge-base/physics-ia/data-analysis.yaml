@@ -1,0 +1,136 @@
+# Data analysis — DRAFT checks, original wording, needs teacher review.
+kb_version: "0.1.0"
+syllabus_year: 2025
+criterion: data_analysis
+summary: >
+  How the raw measurements are recorded, processed and presented, including
+  uncertainties, so that they can answer the research question.
+
+checks:
+  - id: da-01-raw-data-recorded
+    criterion: data_analysis
+    status: draft_needs_teacher_review
+    description: Raw data are recorded with units, uncertainties and appropriate precision.
+    what_to_look_for: >
+      Tables with headings that include quantity, unit and uncertainty, and
+      values recorded to a precision consistent with the instrument resolution.
+    common_weakness_patterns:
+      - Column headings lack units or uncertainties.
+      - The number of decimal places varies within a column or does not match the instrument.
+      - Only averages are shown and the raw repeated readings are missing.
+    question_templates:
+      - How does a reader of your table know the unit and uncertainty of each value?
+      - Why do the values in this column have the number of decimal places they do?
+      - Where can a reader see your individual repeated readings rather than only averages?
+    applies_to_sections: [data]
+
+  - id: da-02-processing-shown
+    criterion: data_analysis
+    status: draft_needs_teacher_review
+    description: Processing of the data is explained, with a worked example of each calculation.
+    what_to_look_for: >
+      Each derived quantity is explained, with the formula used and one sample
+      calculation that a reader can follow.
+    common_weakness_patterns:
+      - Processed values appear in a table without explanation of how they were obtained.
+      - Formulae are used without a sample calculation.
+    question_templates:
+      - How would a reader check how you got this processed value from your raw data?
+      - Which formula did you use for this step, and where do you show one worked example?
+    applies_to_sections: [analysis, data]
+
+  - id: da-03-uncertainty-propagation
+    criterion: data_analysis
+    status: draft_needs_teacher_review
+    description: Uncertainties are carried through calculations to processed values.
+    what_to_look_for: >
+      Absolute or relative uncertainties of processed quantities derived from
+      the raw uncertainties, with the method shown at least once.
+    common_weakness_patterns:
+      - Raw data have uncertainties but processed values do not.
+      - The method used to combine uncertainties is not shown or is inconsistent.
+      - Uncertainty from the spread of repeats is ignored when it is larger than the instrument resolution.
+    question_templates:
+      - How does the uncertainty in your raw readings carry through to this processed value?
+      - Which is larger in your data, the instrument resolution or the spread of your repeats, and which did you use?
+      - How did you combine uncertainties in this calculation, and where do you show that?
+    applies_to_sections: [analysis, data]
+
+  - id: da-04-graph-presentation
+    criterion: data_analysis
+    status: draft_needs_teacher_review
+    description: Graphs are appropriate to the relationship being tested and clearly presented.
+    what_to_look_for: >
+      Choice of what to plot (often a linearised form), labelled axes with
+      units, uncertainty bars, and a description of the graph in the text.
+    common_weakness_patterns:
+      - The quantities plotted do not test the relationship predicted by the theory.
+      - Axis labels or units are missing from the description of the graph.
+      - Uncertainty bars are not mentioned or not shown.
+    question_templates:
+      - Why did you choose these quantities for your axes, and what shape do you expect if your prediction is right?
+      - How does your graph show the uncertainty in each point?
+      - What should a straight line on your graph tell a reader about your two variables?
+    applies_to_sections: [analysis]
+
+  - id: da-05-gradient-and-fit
+    criterion: data_analysis
+    status: draft_needs_teacher_review
+    description: The line of best fit, gradient and intercept are interpreted and given uncertainties.
+    what_to_look_for: >
+      What the gradient and intercept represent physically, and an uncertainty
+      for the gradient (for example from steepest and shallowest lines).
+    common_weakness_patterns:
+      - A gradient is quoted without its physical meaning.
+      - The gradient has no uncertainty.
+      - A non-zero intercept is not discussed.
+    question_templates:
+      - What physical quantity does the gradient of your graph represent?
+      - How did you decide the uncertainty in your gradient?
+      - What does the intercept of your line tell you about your experiment?
+    applies_to_sections: [analysis]
+
+  - id: da-06-anomalies
+    criterion: data_analysis
+    status: draft_needs_teacher_review
+    description: Anomalous readings are identified and their treatment is justified.
+    what_to_look_for: >
+      Readings that do not fit the pattern are noticed, and the decision to keep,
+      repeat or exclude them is explained.
+    common_weakness_patterns:
+      - An obvious outlier is included in averages without comment.
+      - Data are removed without saying why.
+    question_templates:
+      - Which of your readings do not fit the pattern, and what did you decide to do about them?
+      - How did you decide whether a reading was anomalous rather than part of the natural spread?
+    applies_to_sections: [data, analysis]
+
+  - id: da-07-analysis-answers-rq
+    criterion: data_analysis
+    status: draft_needs_teacher_review
+    description: The analysis produces the quantity or relationship needed to answer the research question.
+    what_to_look_for: >
+      A clear path from processed data to the final value or relationship the
+      research question asks about.
+    common_weakness_patterns:
+      - The analysis stops at a table or graph without extracting the result the question asks for.
+      - The final value is calculated in a way that is disconnected from the graph.
+    question_templates:
+      - How does the result of your analysis connect back to the question you set out to answer?
+      - Which step of your analysis turns your graph into the final value you report?
+    applies_to_sections: [analysis, research_question]
+
+  - id: da-08-significant-figures
+    criterion: data_analysis
+    status: draft_needs_teacher_review
+    description: Final values are quoted to a precision consistent with their uncertainties.
+    what_to_look_for: >
+      Processed and final values whose number of significant figures matches
+      the size of their uncertainty.
+    common_weakness_patterns:
+      - A final value is quoted with more digits than its uncertainty justifies.
+      - A value and its uncertainty are quoted to different decimal places.
+    question_templates:
+      - How did you decide how many significant figures to give for this value?
+      - Does the precision of this value match the size of its uncertainty, in your view?
+    applies_to_sections: [analysis, conclusion]

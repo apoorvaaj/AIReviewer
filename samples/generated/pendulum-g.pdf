@@ -1,0 +1,149 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Length 1652 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 790 Td
+(Name: Jordan Avery) Tj T*
+() Tj T*
+(Candidate code: jxa123) Tj T*
+() Tj T*
+(School: Northfield International School) Tj T*
+() Tj T*
+(Supervisor: Ms R. Okafor) Tj T*
+() Tj T*
+(Email: jordan.avery@example.com) Tj T*
+() Tj T*
+(Phone: +44 7700 900123) Tj T*
+() Tj T*
+() Tj T*
+(Determining g with a simple pendulum) Tj T*
+() Tj T*
+() Tj T*
+(Research question) Tj T*
+() Tj T*
+(How does the length of a pendulum affect it?) Tj T*
+() Tj T*
+() Tj T*
+(Background) Tj T*
+() Tj T*
+(A simple pendulum is a mass on a string that swings back and forth. Galileo studied) Tj T*
+(pendulums and noticed that they keep good time. For small angles the period is given by T) Tj T*
+(= 2pisqrt\(L/g\), where T is the period, L is the length and g is the acceleration due to) Tj T*
+(gravity. Pendulums are used in clocks and in many other places. Squaring both sides gives) Tj T*
+(T² = \(4pi²/g\)L, so a graph of T² against L should be a straight line through the origin.) Tj T*
+() Tj T*
+(I chose this topic because my grandfather, Jordan Avery senior, repaired clocks and I) Tj T*
+(wanted to understand how they work.) Tj T*
+() Tj T*
+() Tj T*
+(Variables) Tj T*
+() Tj T*
+(Independent variable: length of the string.) Tj T*
+() Tj T*
+(Dependent variable: period.) Tj T*
+() Tj T*
+(Control variables: mass of the bob, angle of release, the same stopwatch.) Tj T*
+() Tj T*
+() Tj T*
+(Method) Tj T*
+() Tj T*
+(Apparatus: a clamp stand, string, a 50 g mass, a metre rule \(resolution 1 mm\) and a) Tj T*
+(stopwatch \(resolution 0.01 s\).) Tj T*
+() Tj T*
+(1. Tie the string to the clamp and attach the mass.) Tj T*
+() Tj T*
+(2. Measure the length.) Tj T*
+ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 1615 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 790 Td
+() Tj T*
+(3. Pull the mass to the side and let go.) Tj T*
+() Tj T*
+(4. Measure the time for one swing with the stopwatch.) Tj T*
+() Tj T*
+(5. Repeat for different lengths.) Tj T*
+() Tj T*
+(I repeated each length three times and took the average.) Tj T*
+() Tj T*
+(Safety: wear safety goggles at all times and do not run in the laboratory.) Tj T*
+() Tj T*
+() Tj T*
+(Raw data) Tj T*
+() Tj T*
+(| Length / m | Time 1 / s | Time 2 / s | Time 3 / s |) Tj T*
+(| 0.20 | 0.92 | 0.88 | 0.95 |) Tj T*
+(| 0.40 | 1.29 | 1.25 | 1.31 |) Tj T*
+(| 0.60 | 1.58 | 1.52 | 1.60 |) Tj T*
+(| 0.80 | 1.83 | 1.76 | 1.91 |) Tj T*
+(| 1.00 | 2.04 | 1.98 | 2.40 |) Tj T*
+() Tj T*
+() Tj T*
+(Analysis) Tj T*
+() Tj T*
+(I calculated the average period for each length and then squared it. I plotted T² against) Tj T*
+(L and drew a line of best fit. The gradient of the line was 4.12 s² m-¹. Using g =) Tj T*
+(4pi²/gradient I got g = 9.5821 m s-².) Tj T*
+() Tj T*
+() Tj T*
+(Conclusion) Tj T*
+() Tj T*
+(The experiment proves that the period of a pendulum depends on its length and that g =) Tj T*
+(9.5821 m s-². This is close to the real value. The results were as expected.) Tj T*
+() Tj T*
+() Tj T*
+(Evaluation) Tj T*
+() Tj T*
+(There were some errors in the experiment. Human error and reaction time affected the) Tj T*
+(results. The equipment was not very accurate. To improve the experiment I would use better) Tj T*
+(equipment and do more trials.) Tj T*
+() Tj T*
+() Tj T*
+(References) Tj T*
+() Tj T*
+(1. Physics textbook, chapter on oscillations.) Tj T*
+() Tj T*
+(2. A website about pendulum clocks.) Tj T*
+() Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000106 00000 n 
+0000000169 00000 n 
+0000001873 00000 n 
+0000001999 00000 n 
+0000003666 00000 n 
+0000003792 00000 n 
+trailer
+<< /Size 8 /Root 7 0 R >>
+startxref
+3841
+%%EOF

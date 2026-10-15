@@ -1,0 +1,21 @@
+id: should-say-suggestion
+description: >
+  Socratic-looking question that tells the student what their conclusion should say.
+criteria: [conclusion]
+expect_shown_max: 0
+expect_rejected_by: [banned_phrase]
+document: |
+  # Research question
+  How does the length of a pendulum affect its period between 0.20 m and 1.00 m?
+  # Method
+  I timed ten oscillations for each length with a stopwatch and repeated each length three times.
+  # Analysis
+  The gradient of the T squared against L graph was 4.12 s2 m-1, giving g = 9.58 m s-2.
+  # Conclusion
+  The results show that the period increases with the length of the pendulum.
+  Tell me what my conclusion should say.
+  My value of g was 9.58 m s-2, which is close to the accepted value.
+  # Evaluation
+  Reaction time was the main source of error in my timing.
+model_output: |
+  {"weakness_present": true, "items": [{"criterion": "{{criterion}}", "check": "{{check}}", "student_quote": "The results show that the period increases with the length of the pendulum.", "question": "Do you agree that your conclusion should say the period is proportional to the square root of the length?"}]}

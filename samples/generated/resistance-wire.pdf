@@ -1,0 +1,147 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Length 2386 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 790 Td
+(Student: Priya Raman-Clarke) Tj T*
+() Tj T*
+(Candidate number: 004321-0007) Tj T*
+() Tj T*
+(School name: Lakeside Academy) Tj T*
+() Tj T*
+(Teacher: Dr Tomás Ferreira) Tj T*
+() Tj T*
+(Contact: priya.rc@example.org, tel 07700 900456) Tj T*
+() Tj T*
+() Tj T*
+(The resistance of a constantan wire) Tj T*
+() Tj T*
+() Tj T*
+(Introduction) Tj T*
+() Tj T*
+(Electrical resistance describes how strongly a component opposes the current through it.) Tj T*
+(For a uniform wire, R = rhoL/A, where rho is the resistivity of the material, L the length and) Tj T*
+(A the cross-sectional area. If the temperature of the wire stays constant, the resistance) Tj T*
+(should be directly proportional to the length, so a graph of R against L should be a) Tj T*
+(straight line through the origin with gradient rho/A. Constantan is used because its) Tj T*
+(resistivity changes very little with temperature.) Tj T*
+() Tj T*
+(Research question: How does the resistance of a 0.38 mm diameter constantan wire depend on) Tj T*
+(its length between 0.10 m and 0.90 m at room temperature?) Tj T*
+() Tj T*
+() Tj T*
+(Hypothesis) Tj T*
+() Tj T*
+(I predict that resistance is directly proportional to length, because each additional) Tj T*
+(section of wire adds the same opposition to the current.) Tj T*
+() Tj T*
+() Tj T*
+(Variables) Tj T*
+() Tj T*
+(The independent variable is the length of wire between the crocodile clips, measured with) Tj T*
+(a metre rule. The dependent variable is the resistance, calculated from the potential) Tj T*
+(difference across the wire divided by the current through it. The current is kept below) Tj T*
+(0.30 A by using a fixed supply voltage of 1.5 V and a protective resistor, so that the) Tj T*
+(wire does not heat up noticeably. The same piece of wire is used throughout so that the) Tj T*
+(diameter and material do not change.) Tj T*
+() Tj T*
+() Tj T*
+(Method) Tj T*
+() Tj T*
+(The wire was taped along a metre rule. A digital ammeter \(resolution 0.001 A\) was) Tj T*
+(connected in series and a digital voltmeter \(resolution 0.01 V\) in parallel with the) Tj T*
+(section of wire between the clips. For each length the switch was closed for less than) Tj T*
+(five seconds, the readings were recorded and the switch was opened again. Nine lengths) Tj T*
+(from 0.10 m to 0.90 m were used, and each was measured three times, moving the clips off) Tj T*
+ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 1986 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 790 Td
+(and back on between repeats.) Tj T*
+() Tj T*
+() Tj T*
+(Results) Tj T*
+() Tj T*
+(| Length / m ±0.002 | V / V ±0.01 | I / A ±0.001 | R / Ohm |) Tj T*
+(| 0.100 | 0.42 | 0.268 | 1.57 |) Tj T*
+(| 0.200 | 0.71 | 0.231 | 3.07 |) Tj T*
+(| 0.300 | 0.92 | 0.204 | 4.51 |) Tj T*
+(| 0.400 | 1.07 | 0.182 | 5.88 |) Tj T*
+(| 0.500 | 1.19 | 0.163 | 7.30 |) Tj T*
+(| 0.600 | 1.28 | 0.149 | 8.59 |) Tj T*
+(| 0.700 | 1.35 | 0.137 | 9.85 |) Tj T*
+(| 0.800 | 1.40 | 0.126 | 11.11 |) Tj T*
+(| 0.900 | 1.44 | 0.117 | 12.31 |) Tj T*
+() Tj T*
+() Tj T*
+(Data analysis) Tj T*
+() Tj T*
+(Resistance was calculated with R = V/I for each trial and then averaged. The percentage) Tj T*
+(uncertainty in R was found by adding the percentage uncertainties in V and I. A graph of R) Tj T*
+(against L gave a straight line with gradient 13.5 Ohm m-¹ and a small positive intercept of) Tj T*
+(0.2 Ohm. The steepest and shallowest lines through the error bars gave gradients of 14.0 and) Tj T*
+(13.0 Ohm m-¹, so the gradient is 13.5 ± 0.5 Ohm m-¹.) Tj T*
+() Tj T*
+() Tj T*
+(Conclusion) Tj T*
+() Tj T*
+(Resistance increases linearly with length, which supports the hypothesis. Using the) Tj T*
+(gradient and the area of the wire, the resistivity is \(1.53 ± 0.06\) × 10-^6 Ohm m. The) Tj T*
+(accepted value for constantan is about 4.9 × 10-^7 Ohm m, so my value is very accurate.) Tj T*
+() Tj T*
+() Tj T*
+(Evaluation) Tj T*
+() Tj T*
+(The small positive intercept suggests a constant extra resistance, probably from the) Tj T*
+(contact between the crocodile clips and the wire. This would make every resistance) Tj T*
+(slightly too high but would not change the gradient. The diameter of the wire was not) Tj T*
+(measured by me; I used the value printed on the reel, which may not be exact. In the) Tj T*
+(future I would measure the diameter at several points with a micrometer.) Tj T*
+() Tj T*
+() Tj T*
+(Bibliography) Tj T*
+() Tj T*
+(1. Supplier data sheet for constantan wire.) Tj T*
+() Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000106 00000 n 
+0000000169 00000 n 
+0000002607 00000 n 
+0000002733 00000 n 
+0000004771 00000 n 
+0000004897 00000 n 
+trailer
+<< /Size 8 /Root 7 0 R >>
+startxref
+4946
+%%EOF

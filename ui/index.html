@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IB Feedback Coach</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">IB Feedback Coach <span class="tag">Physics IA · prototype</span></div>
+    <ol class="steps" id="steps">
+      <li data-step="open">Choose draft</li>
+      <li data-step="redact">Remove personal details</li>
+      <li data-step="criteria">Choose criteria</li>
+      <li data-step="payload">What leaves your laptop</li>
+      <li data-step="results">Questions</li>
+    </ol>
+  </header>
+
+  <main>
+    <div id="banner" class="banner" hidden></div>
+
+    <!-- 1. Choose draft -->
+    <section id="screen-open" class="screen">
+      <h1>Questions about your draft, never answers</h1>
+      <p class="lead">This tool reads your IB Physics IA draft and asks you questions about it, one criterion at a time. It never writes, rewrites or suggests wording, so everything in your IA stays your own work.</p>
+      <ul class="promises">
+        <li><strong>Questions only.</strong> Every item quotes your own words and asks one question. Anything that looks like text you could paste into your IA is blocked before you see it.</li>
+        <li><strong>You see what leaves your laptop.</strong> Personal details are removed on this computer first. You then see the exact text that would be sent, and nothing is sent until you press Send.</li>
+        <li><strong>Nothing is kept.</strong> The app saves nothing except the report and receipt you choose to save. Closing the app clears everything.</li>
+      </ul>
+      <div id="startup-warnings"></div>
+      <button id="btn-open" class="primary">Choose your draft (.docx or .pdf)</button>
+      <p class="muted small" id="app-version"></p>
+    </section>
+
+    <!-- 2. Redaction -->
+    <section id="screen-redact" class="screen" hidden>
+      <h1>Remove personal details</h1>
+      <p class="lead">Type the details that could identify you. They are used only to find and hide those words in your draft. They stay in this app's memory and are never saved or sent.</p>
+      <p class="muted" id="doc-summary"></p>
+      <form id="form-ids" class="grid" autocomplete="off">
+        <label>Your name <input name="student_names" placeholder="e.g. Sam Lee"></label>
+        <label>Candidate code / number <input name="candidate_codes" placeholder="e.g. abc123"></label>
+        <label>School <input name="school_names" placeholder="School name"></label>
+        <label>Supervisor <input name="supervisor_names" placeholder="Teacher's name"></label>
+        <p class="muted small span2">Separate several entries with a semicolon ( ; ). Email addresses, phone numbers and "Name:" or "School:" lines are found automatically.</p>
+        <div class="span2"><button type="submit">Find and hide these details</button></div>
+      </form>
+
+      <div id="redaction-result" hidden>
+        <h2>What was hidden</h2>
+        <p class="muted small">Untick a term to keep it visible (for example if a surname is also a physics term). Add any other word you want hidden.</p>
+        <ul id="term-list" class="terms"></ul>
+        <form id="form-extra" class="inline" autocomplete="off">
+          <label>Hide another word or phrase <input name="extra" placeholder="e.g. a town or a friend's name"></label>
+          <button type="submit">Hide it</button>
+        </form>
+        <h2>Your draft after redaction</h2>
+        <p class="muted small" id="redacted-summary"></p>
+        <div id="redacted-text" class="doc"></div>
+        <div class="actions">
+          <button id="btn-restart-1" class="ghost">Choose a different file</button>
+          <button id="btn-to-criteria" class="primary">The details are hidden, continue</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Criteria -->
+    <section id="screen-criteria" class="screen" hidden>
+      <h1>Which criteria do you want questions about?</h1>
+      <p class="lead">Each criterion is broken into separate checks. Each check is sent only the parts of your draft it needs.</p>
+      <div id="criteria-list" class="criteria"></div>
+      <p class="note">Only text is sent. Graphs, images and equations drawn as pictures are not sent, so questions about Data analysis may miss things that are only shown in your graphs.</p>
+      <p class="muted small" id="sections-found"></p>
+      <div class="actions">
+        <button id="btn-back-redact" class="ghost">Back</button>
+        <button id="btn-build" class="primary">Show me exactly what will be sent</button>
+      </div>
+    </section>
+
+    <!-- 4. Payload -->
+    <section id="screen-payload" class="screen" hidden>
+      <h1>What leaves your laptop</h1>
+      <p class="lead">This is everything that will be sent if you press Send. Nothing has been sent yet.</p>
+      <dl id="payload-summary" class="summary"></dl>
+      <div class="note" id="data-handling"></div>
+      <h2>The requests, one per check</h2>
+      <p class="muted small">Open any request to see the part of your draft it contains and the exact bytes that will be sent.</p>
+      <div id="request-list"></div>
+      <details class="request">
+        <summary>Second check on the questions (sent after the answers arrive)</summary>
+        <p class="small">Before you see any question, a second, smaller model is asked whether any part of it could be pasted into your IA. That request contains only the generated questions and the short quotes from your redacted draft shown above, inserted into this fixed template:</p>
+        <pre id="second-pass-template" class="bytes"></pre>
+      </details>
+      <label class="confirm"><input type="checkbox" id="chk-reviewed"> I have looked at what will be sent and I want to send it.</label>
+      <div class="actions">
+        <button id="btn-back-criteria" class="ghost">Back</button>
+        <button id="btn-send" class="primary" disabled>Send</button>
+      </div>
+    </section>
+
+    <!-- 5. Running -->
+    <section id="screen-running" class="screen" hidden>
+      <h1>Asking about your draft…</h1>
+      <progress id="progress" max="1" value="0"></progress>
+      <p class="muted" id="progress-text">Starting…</p>
+      <p class="muted small">Each answer is checked on this computer before you see it. Anything that is not a single question grounded in your own words is dropped.</p>
+    </section>
+
+    <!-- 6. Results -->
+    <section id="screen-results" class="screen" hidden>
+      <h1>Questions about your draft</h1>
+      <p class="muted" id="results-summary"></p>
+      <div id="results-errors"></div>
+      <div id="results-list"></div>
+      <h2>Statement for your AI acknowledgement</h2>
+      <p class="ack" id="ack"></p>
+      <p class="muted small">Only use this statement if every part of it is true. Check your school's and the IB's guidance on acknowledging AI tools.</p>
+      <div class="actions">
+        <button id="btn-save-report">Save questions…</button>
+        <button id="btn-save-receipt">Save receipt…</button>
+        <button id="btn-restart-2" class="ghost">Start a new review</button>
+      </div>
+      <p class="muted small" id="save-status"></p>
+    </section>
+  </main>
+</body>
+</html>

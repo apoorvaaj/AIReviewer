@@ -1,0 +1,34 @@
+# IB Feedback Coach configuration (optional; every field has a default).
+#
+# Copy to one of:
+#   Windows: %APPDATA%\ib-feedback-coach\config.toml
+#   macOS:   ~/Library/Application Support/ib-feedback-coach/config.toml
+# or point the IB_COACH_CONFIG environment variable at a file.
+# The app only READS this file; it never writes it.
+
+# Model for the per-check feedback calls. Switch to "claude-opus-5-5" to compare.
+primary_model = "claude-sonnet-5-5"
+
+# Small model for the "could this be pasted into the essay?" second pass.
+second_pass_model = "claude-haiku-5-5"
+
+# Effort: low | medium | high | xhigh | max
+effort = "medium"
+second_pass_effort = "low"
+
+max_tokens = 8000
+api_base_url = "https://api.anthropic.com"
+
+# The API key is read from this environment variable.
+api_key_env = "ANTHROPIC_API_KEY"
+# Fallback only if the environment variable is unset. Prefer the variable:
+# a key in a file is easier to leak.
+# api_key = "sk-ant-..."
+
+# Parallel check requests (1-16).
+max_concurrency = 4
+request_timeout_secs = 180
+
+# Set to true ONLY if your Anthropic organisation has a signed Zero Data
+# Retention agreement. It changes the data-handling statement students see.
+zero_data_retention = false

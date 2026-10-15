@@ -1,0 +1,69 @@
+# Whole-document checks — need the full (redacted) text. DRAFT, needs teacher review.
+# Each is attached to the criterion it informs and runs when that criterion is selected.
+kb_version: "0.1.0"
+syllabus_year: 2025
+
+checks:
+  - id: wd-01-conclusion-answers-rq
+    criterion: conclusion
+    status: draft_needs_teacher_review
+    scope: whole_document
+    description: The conclusion answers the research question as it was stated at the start.
+    what_to_look_for: >
+      Compare the research question near the start with the conclusion near
+      the end. Do they address the same variables, system and range?
+    common_weakness_patterns:
+      - The conclusion answers a different or broader question than the one posed.
+      - The conclusion talks about a quantity that the research question did not mention.
+    question_templates:
+      - If you read your research question and then your conclusion side by side, does the conclusion answer exactly that question?
+      - Which words in your conclusion correspond to the variables named in your research question?
+    applies_to_sections: []
+
+  - id: wd-02-uncertainty-thread
+    criterion: data_analysis
+    status: draft_needs_teacher_review
+    scope: whole_document
+    description: Uncertainties are followed consistently from raw data to the final result.
+    what_to_look_for: >
+      Trace uncertainties from the method (instrument resolution), through
+      the data tables and processing, to the final value in the conclusion.
+    common_weakness_patterns:
+      - Uncertainties stated in the method never appear in the data or analysis.
+      - The uncertainty in the final value is unrelated to the uncertainties earlier in the work.
+    question_templates:
+      - How does the uncertainty you mention in your method show up in your final result?
+      - Can a reader follow your uncertainty from your raw readings all the way to your conclusion?
+    applies_to_sections: []
+
+  - id: wd-03-evaluation-uses-own-data
+    criterion: evaluation
+    status: draft_needs_teacher_review
+    scope: whole_document
+    description: The evaluation refers to the student's own results rather than generic limitations.
+    what_to_look_for: >
+      Whether the limitations discussed in the evaluation are tied to evidence
+      that appears in the data or analysis sections.
+    common_weakness_patterns:
+      - The evaluation could have been written without having done the experiment.
+      - A limitation is discussed that the data give no sign of.
+    question_templates:
+      - Which results in your data or graph led you to identify this limitation?
+      - How would your evaluation differ if your data had shown a different pattern?
+    applies_to_sections: []
+
+  - id: wd-04-method-matches-data
+    criterion: research_design
+    status: draft_needs_teacher_review
+    scope: whole_document
+    description: The data collected match the method described.
+    what_to_look_for: >
+      Number of values, repeats, ranges and instruments in the data tables are
+      consistent with what the method says was done.
+    common_weakness_patterns:
+      - The method promises repeats or values that do not appear in the data.
+      - The data include a measurement the method never describes.
+    question_templates:
+      - Does the data you present match what your method says you did, including the number of repeats?
+      - Where in your method does a reader learn how this measurement in your table was taken?
+    applies_to_sections: []

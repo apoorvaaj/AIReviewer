@@ -1,0 +1,142 @@
+# Research design — DRAFT checks, original wording, needs teacher review.
+kb_version: "0.1.0"
+syllabus_year: 2025
+criterion: research_design
+summary: >
+  How clearly the investigation is framed and planned: the question, the
+  physics behind it, the variables, and a method someone else could repeat.
+
+checks:
+  - id: rd-01-focused-question
+    criterion: research_design
+    status: draft_needs_teacher_review
+    description: The research question is focused and names what is changed and what is measured.
+    what_to_look_for: >
+      A single question that identifies the independent variable, the dependent
+      variable, the system being studied, and ideally the range of values.
+    common_weakness_patterns:
+      - The question is broad ("How does length affect a pendulum?") without saying what is measured.
+      - The dependent variable is not stated or is not something that can actually be measured.
+      - The range or conditions of the investigation are not mentioned.
+    question_templates:
+      - Which quantity are you measuring, and where in your research question does a reader find it?
+      - How would someone reading only your research question know the range of values you investigate?
+      - What exactly is changed and what is measured in the system your question describes?
+    applies_to_sections: [research_question, background, front_matter]
+
+  - id: rd-02-physics-background
+    criterion: research_design
+    status: draft_needs_teacher_review
+    description: The relevant physics is explained and linked to the research question.
+    what_to_look_for: >
+      Background theory that the student actually uses later: an equation or
+      model that predicts how the dependent variable should depend on the
+      independent variable, with symbols defined.
+    common_weakness_patterns:
+      - Theory is described generally but never connected to the variables in the question.
+      - An equation appears without its symbols being defined or its assumptions stated.
+      - Background reads like an encyclopaedia summary that is not used later in the analysis.
+    question_templates:
+      - How does the theory you describe lead to a prediction about your two variables?
+      - Which assumptions does your equation rely on, and do they hold in your set-up?
+      - Where later in your work do you use the background physics you explain here?
+    applies_to_sections: [background, hypothesis, research_question]
+
+  - id: rd-03-variables-identified
+    criterion: research_design
+    status: draft_needs_teacher_review
+    description: Independent, dependent and control variables are identified, with how and why each is controlled.
+    what_to_look_for: >
+      A clear statement of each variable type. For control variables: why it
+      matters to the result and the specific way it is kept constant.
+    common_weakness_patterns:
+      - Control variables are listed with no explanation of how they are kept constant.
+      - Control variables are listed with no reason why they would affect the result.
+      - A variable that clearly matters for this set-up is not mentioned at all.
+    question_templates:
+      - How do you keep this variable constant in practice, and how would you know if it changed?
+      - Why would a change in this variable affect your measured result?
+      - Which other factors in your set-up could change between trials, and how do you deal with them?
+    applies_to_sections: [variables, method]
+
+  - id: rd-04-range-and-intervals
+    criterion: research_design
+    status: draft_needs_teacher_review
+    description: The independent variable covers a sensible range with enough distinct values.
+    what_to_look_for: >
+      Number of distinct independent-variable values (commonly at least five),
+      their spread, and a reason for the chosen range and limits.
+    common_weakness_patterns:
+      - Too few values of the independent variable to establish a trend.
+      - Values are bunched in a narrow range without justification.
+      - The limits of the range are not justified by the apparatus or the physics.
+    question_templates:
+      - How did you decide on the smallest and largest values of your independent variable?
+      - How many different values do you need to be confident about the shape of the relationship you expect?
+      - What might happen to your results outside the range you chose?
+    applies_to_sections: [method, variables, data]
+
+  - id: rd-05-repeats-and-precision
+    criterion: research_design
+    status: draft_needs_teacher_review
+    description: The method reduces random uncertainty through repeats and measurement technique.
+    what_to_look_for: >
+      Repeated trials, techniques that reduce the relative uncertainty (for
+      example timing many oscillations), and the resolution of each instrument.
+    common_weakness_patterns:
+      - No repeated measurements, or the number of repeats is not stated.
+      - Instrument resolution or measurement uncertainty is not given.
+      - A short time or small distance is measured directly when a technique could reduce its relative uncertainty.
+    question_templates:
+      - How does your method reduce the effect of random variation in your measurements?
+      - What is the smallest change your instruments can detect, and how does that compare with the values you measure?
+      - How many repeats did you plan, and what was your reason for that number?
+    applies_to_sections: [method]
+
+  - id: rd-06-reproducible-method
+    criterion: research_design
+    status: draft_needs_teacher_review
+    description: The method is described in enough detail for someone else to repeat it.
+    what_to_look_for: >
+      Apparatus with specifications, a logical sequence of steps, how each
+      measurement is taken, and a diagram or clear description of the set-up.
+    common_weakness_patterns:
+      - Steps are vague ("measure the time") without saying how or from where.
+      - Key apparatus details (sizes, models, resolutions) are missing.
+      - The order of steps is unclear or a step needed to get the data is missing.
+    question_templates:
+      - Could another student reproduce your measurements from this description alone, and what would they need to ask you?
+      - How exactly is this measurement taken, and from which reference point?
+      - Which details of your apparatus would someone need in order to get comparable results?
+    applies_to_sections: [method]
+
+  - id: rd-07-safety-ethics-environment
+    criterion: research_design
+    status: draft_needs_teacher_review
+    description: Relevant safety, ethical or environmental considerations are addressed where they apply.
+    what_to_look_for: >
+      Hazards that genuinely apply to this set-up and how they are managed;
+      no padding with irrelevant generic precautions.
+    common_weakness_patterns:
+      - A real hazard of the set-up (heat, high current, falling masses, lasers) is not mentioned.
+      - Generic precautions are listed that do not relate to this investigation.
+    question_templates:
+      - Which parts of your set-up could cause harm, and how does your method manage them?
+      - How do the precautions you list relate to the specific apparatus you use?
+    applies_to_sections: [method]
+
+  - id: rd-08-justified-choices
+    criterion: research_design
+    status: draft_needs_teacher_review
+    description: Choices of apparatus and technique are justified, not just stated.
+    what_to_look_for: >
+      Reasons for choosing particular instruments, techniques or conditions,
+      ideally with reference to precision, accuracy or practicality.
+    common_weakness_patterns:
+      - Apparatus is listed with no reason why it was chosen over alternatives.
+      - A design decision that affects data quality is stated without justification.
+    question_templates:
+      - Why did you choose this instrument rather than another way of measuring the same quantity?
+      - How did your choice of technique affect the uncertainty in your measurements?
+      - Which design decision had the biggest effect on the quality of your data, and why did you make it?
+    applies_to_sections: [method, background]

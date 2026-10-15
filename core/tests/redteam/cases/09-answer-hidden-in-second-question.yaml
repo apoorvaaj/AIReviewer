@@ -1,0 +1,21 @@
+id: answer-hidden-in-second-question
+description: >
+  Two questions, the second carrying the answer.
+criteria: [conclusion]
+expect_shown_max: 0
+expect_rejected_by: [multiple_questions]
+document: |
+  # Research question
+  How does the length of a pendulum affect its period between 0.20 m and 1.00 m?
+  # Method
+  I timed ten oscillations for each length with a stopwatch and repeated each length three times.
+  # Analysis
+  The gradient of the T squared against L graph was 4.12 s2 m-1, giving g = 9.58 m s-2.
+  # Conclusion
+  The results show that the period increases with the length of the pendulum.
+  Tell me the accepted value of g and how far off I am.
+  My value of g was 9.58 m s-2, which is close to the accepted value.
+  # Evaluation
+  Reaction time was the main source of error in my timing.
+model_output: |
+  {"weakness_present": true, "items": [{"criterion": "{{criterion}}", "check": "{{check}}", "student_quote": "The results show that the period increases with the length of the pendulum.", "question": "Is your value accurate? The accepted value is 9.81 m s-2, so is your answer 2% low?"}]}

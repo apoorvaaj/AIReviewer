@@ -1,0 +1,112 @@
+# Evaluation — DRAFT checks, original wording, needs teacher review.
+kb_version: "0.1.0"
+syllabus_year: 2025
+criterion: evaluation
+summary: >
+  How well the student judges the strengths and weaknesses of their own
+  investigation and proposes realistic, specific improvements.
+
+checks:
+  - id: ev-01-specific-weaknesses
+    criterion: evaluation
+    status: draft_needs_teacher_review
+    description: Weaknesses identified are specific to this method, not generic.
+    what_to_look_for: >
+      Limitations tied to particular steps or apparatus in this investigation,
+      rather than catch-all phrases.
+    common_weakness_patterns:
+      - Generic phrases such as "human error" or "faulty equipment" with no detail.
+      - Weaknesses that could apply to any experiment.
+    question_templates:
+      - Which specific step in your method does this weakness come from?
+      - How exactly did this problem show up in your measurements?
+    applies_to_sections: [evaluation]
+
+  - id: ev-02-random-vs-systematic
+    criterion: evaluation
+    status: draft_needs_teacher_review
+    description: The student distinguishes random from systematic effects and their likely direction.
+    what_to_look_for: >
+      Recognition of whether each weakness causes scatter or a consistent
+      shift, and in which direction it would move the result.
+    common_weakness_patterns:
+      - All errors are treated as the same kind.
+      - The direction in which a systematic effect would shift the result is not considered.
+    question_templates:
+      - Would this problem make your readings scatter, or shift them all in one direction?
+      - In which direction would this effect move your final value, and how do you know?
+    applies_to_sections: [evaluation, analysis]
+
+  - id: ev-03-relative-significance
+    criterion: evaluation
+    status: draft_needs_teacher_review
+    description: The relative importance of each weakness is judged using evidence.
+    what_to_look_for: >
+      A judgement of which limitations mattered most, supported by the data
+      (for example the size of uncertainties or the pattern of residuals).
+    common_weakness_patterns:
+      - Weaknesses are listed without saying which mattered most.
+      - Significance is asserted without reference to the data.
+    question_templates:
+      - Which of the weaknesses you list had the biggest effect on your result, and what in your data shows that?
+      - How does the size of this effect compare with your calculated uncertainty?
+    applies_to_sections: [evaluation, data, analysis]
+
+  - id: ev-04-realistic-improvements
+    criterion: evaluation
+    status: draft_needs_teacher_review
+    description: Improvements are realistic, specific and linked to the weaknesses identified.
+    what_to_look_for: >
+      Each improvement addresses a named weakness and is described concretely
+      enough to carry out with school equipment.
+    common_weakness_patterns:
+      - Improvements are vague ("use better equipment", "do more trials").
+      - An improvement does not address any weakness that was identified.
+    question_templates:
+      - Which weakness does this improvement address, and how would you know if it worked?
+      - What exactly would you change in your method, and what equipment would that need?
+    applies_to_sections: [evaluation]
+
+  - id: ev-05-strengths
+    criterion: evaluation
+    status: draft_needs_teacher_review
+    description: Strengths of the method are recognised as well as weaknesses.
+    what_to_look_for: >
+      Acknowledgement of what worked well and why, supported by the data.
+    common_weakness_patterns:
+      - Only weaknesses are discussed.
+      - Strengths are claimed with no supporting evidence.
+    question_templates:
+      - Which parts of your method worked well, and what in your data suggests that?
+      - What did you do that helped keep your uncertainties small?
+    applies_to_sections: [evaluation]
+
+  - id: ev-06-model-assumptions
+    criterion: evaluation
+    status: draft_needs_teacher_review
+    description: Assumptions in the physical model are evaluated against the actual set-up.
+    what_to_look_for: >
+      Discussion of whether the conditions assumed by the theory were met in
+      practice, and the likely consequence if they were not.
+    common_weakness_patterns:
+      - Assumptions from the background are not revisited.
+      - The effect of a broken assumption on the result is not considered.
+    question_templates:
+      - Which assumptions behind your equation were not fully met in your experiment?
+      - How might your result change if one of your theory's assumptions did not hold?
+    applies_to_sections: [evaluation, background]
+
+  - id: ev-07-extensions
+    criterion: evaluation
+    status: draft_needs_teacher_review
+    description: Possible extensions follow from what was found.
+    what_to_look_for: >
+      Suggestions for further investigation that build on the findings rather
+      than unrelated new topics.
+    common_weakness_patterns:
+      - Extensions are unrelated to the result.
+      - No further investigation is considered.
+    question_templates:
+      - What new question does your result raise that you could investigate next?
+      - How would your proposed extension build on what you found?
+    applies_to_sections: [evaluation, conclusion]

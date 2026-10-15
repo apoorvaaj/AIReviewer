@@ -1,0 +1,37 @@
+# IB Feedback Coach knowledge base: IB Physics Internal Assessment.
+#
+# STATUS: DRAFT. Every check was written from general good practice in
+# scientific investigation. Nothing is copied from IB subject guides, examiner
+# reports or exemplar material. Criterion NAMES follow the published structure
+# of the Physics IA (first assessment 2025); all descriptions, weakness
+# patterns and questions are original wording and MUST be reviewed and
+# rewritten by experienced IB Physics teachers before use with students.
+#
+# To approve a check, a reviewing teacher changes its status to
+# teacher_approved. Bump kb_version in EVERY file whenever any file changes.
+
+kb_id: ib-physics-ia
+subject: Physics
+assessment: Internal Assessment (scientific investigation)
+kb_version: "0.1.0"
+syllabus_year: 2025
+status: draft_needs_teacher_review
+notice: >
+  Draft checklist written by the developer for prototype testing only.
+  Not reviewed by IB teachers. Not endorsed by the International Baccalaureate.
+
+criteria:
+  - id: research_design
+    name: Research design
+    file: research-design.yaml
+  - id: data_analysis
+    name: Data analysis
+    file: data-analysis.yaml
+  - id: conclusion
+    name: Conclusion
+    file: conclusion.yaml
+  - id: evaluation
+    name: Evaluation
+    file: evaluation.yaml
+
+whole_document_file: whole-document.yaml

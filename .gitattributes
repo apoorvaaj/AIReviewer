@@ -1,0 +1,8 @@
+# Keep text files byte-identical on every OS. Tests hash the knowledge base and
+# validator rules and match quotes exactly, so CRLF conversion would break them.
+* text=auto eol=lf
+
+*.docx binary
+*.pdf binary
+*.png binary
+*.ico binary

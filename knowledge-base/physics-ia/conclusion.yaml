@@ -1,0 +1,115 @@
+# Conclusion — DRAFT checks, original wording, needs teacher review.
+kb_version: "0.1.0"
+syllabus_year: 2025
+criterion: conclusion
+summary: >
+  Whether the student states what the results show, supports it with their
+  own data and uncertainties, and relates it to accepted physics.
+
+checks:
+  - id: co-01-states-finding
+    criterion: conclusion
+    status: draft_needs_teacher_review
+    description: The conclusion states clearly what was found.
+    what_to_look_for: >
+      A direct statement of the relationship or value found, in terms of the
+      variables in the research question.
+    common_weakness_patterns:
+      - The conclusion restates the method instead of the finding.
+      - The finding is vague ("the results were as expected").
+    question_templates:
+      - If a reader only read your first sentence here, what would they learn about your result?
+      - How does this statement describe the relationship between your two variables?
+    applies_to_sections: [conclusion]
+
+  - id: co-02-supported-by-data
+    criterion: conclusion
+    status: draft_needs_teacher_review
+    description: The conclusion is supported by specific evidence from the student's own data.
+    what_to_look_for: >
+      References to specific values, gradients or trends from the analysis
+      that justify each claim.
+    common_weakness_patterns:
+      - Claims are made without referring to any value or feature of the data.
+      - The conclusion relies on theory rather than on what was measured.
+    question_templates:
+      - Which value or feature of your data supports this claim?
+      - How would a reader see the link between this sentence and your graph or table?
+    applies_to_sections: [conclusion, analysis]
+
+  - id: co-03-uncertainty-in-conclusion
+    criterion: conclusion
+    status: draft_needs_teacher_review
+    description: The uncertainty of the final result is stated and taken into account.
+    what_to_look_for: >
+      The final value is given with its uncertainty, and the conclusion's
+      confidence matches that uncertainty.
+    common_weakness_patterns:
+      - The final value appears without an uncertainty.
+      - The conclusion sounds more certain than the uncertainty allows.
+    question_templates:
+      - How certain can you be about this result, given the uncertainty you calculated?
+      - Where does your conclusion tell the reader how precise your final value is?
+    applies_to_sections: [conclusion]
+
+  - id: co-04-comparison-with-accepted
+    criterion: conclusion
+    status: draft_needs_teacher_review
+    description: The result is compared with an accepted or theoretical value where one exists.
+    what_to_look_for: >
+      A comparison with a referenced accepted value or theoretical prediction,
+      and whether the difference lies within the uncertainty.
+    common_weakness_patterns:
+      - No comparison with an accepted value even though one exists.
+      - A percentage difference is given but not related to the uncertainty.
+      - The source of the accepted value is not given.
+    question_templates:
+      - How does your result compare with the value you would expect, and is the difference within your uncertainty?
+      - Where did your comparison value come from, and how reliable is that source?
+      - What does the size of the difference between your value and the expected value tell you?
+    applies_to_sections: [conclusion, background]
+
+  - id: co-05-scientific-explanation
+    criterion: conclusion
+    status: draft_needs_teacher_review
+    description: The trend is explained using the physics introduced earlier.
+    what_to_look_for: >
+      An explanation of why the observed relationship occurs, linked back to
+      the theory in the background section.
+    common_weakness_patterns:
+      - The trend is described but not explained.
+      - The explanation introduces new theory not mentioned earlier.
+    question_templates:
+      - How does the physics you described at the start explain the trend you found?
+      - Why does your dependent variable behave this way when you change the independent variable?
+    applies_to_sections: [conclusion, background]
+
+  - id: co-06-scope-of-validity
+    criterion: conclusion
+    status: draft_needs_teacher_review
+    description: The conclusion recognises the range and conditions under which it holds.
+    what_to_look_for: >
+      Acknowledgement that the result applies to the range and conditions
+      tested, and of any approximations behind it.
+    common_weakness_patterns:
+      - The conclusion is generalised beyond the range investigated.
+      - Approximations used in the theory are not mentioned when drawing the conclusion.
+    question_templates:
+      - Over what range of values does your conclusion hold, based on your data?
+      - Which approximations behind your conclusion might stop being valid outside your range?
+    applies_to_sections: [conclusion]
+
+  - id: co-07-not-overclaiming
+    criterion: conclusion
+    status: draft_needs_teacher_review
+    description: Claims are proportionate to the evidence.
+    what_to_look_for: >
+      Language that matches the strength of the evidence; no claims of "proof"
+      from a small data set.
+    common_weakness_patterns:
+      - Words such as "proves" or "confirms" are used for a limited data set.
+      - A relationship is claimed from very few points or a weak trend.
+    question_templates:
+      - How strongly does your evidence support the word you use here?
+      - What further evidence would make you more confident in this claim?
+    applies_to_sections: [conclusion]

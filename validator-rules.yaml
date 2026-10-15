@@ -1,0 +1,145 @@
+# Validator rules for feedback items. Loaded at start-up; the SHA-256 of this
+# file is recorded in every session receipt.
+#
+# Every item the model returns must pass ALL rules or it is dropped (never
+# shown) and counted in the run log. See core/src/validate/rules.rs.
+#
+# All phrase matching is case-insensitive, on whole words, after typography
+# normalisation (curly quotes -> straight, dashes -> '-', etc.).
+
+rules_version: 1
+
+max_items_per_check: 2
+
+# student_quote limits (words)
+min_quote_words: 3
+max_quote_words: 60
+
+# question limits
+min_question_words: 5
+max_question_words: 35
+max_question_chars: 250
+
+# Paste-able prose heuristic (see core/src/validate/prose.rs): a clause longer
+# than this many words must be addressed to the student or be interrogative.
+prose_run_max_words: 8
+
+# Text in quotation marks longer than this many words must be the student's
+# own words (stops "Would 'X Y Z ...' be clearer?" smuggling in wording).
+max_unattributed_quoted_words: 3
+
+# Imperative / rewrite / suggestion phrases. Any match => reject.
+banned_phrases:
+  - rephrase
+  - re-phrase
+  - reword
+  - re-word
+  - rewrite
+  - re-write
+  - change to
+  - change it to
+  - change this to
+  - replace with
+  - replace it with
+  - replace this with
+  - consider writing
+  - consider saying
+  - consider adding the sentence
+  - consider adding a sentence
+  - a better way to say
+  - a better way of saying
+  - better phrased as
+  - could be phrased
+  - should be phrased
+  - could be worded
+  - should be worded
+  - you could write
+  - you should write
+  - you might write
+  - you could say
+  - you could add
+  - you should add
+  - try writing
+  - try saying
+  - try adding
+  - try changing
+  - why not write
+  - why not say
+  - why not add
+  - why not include
+  - here is
+  - here's
+  - here are
+  - improved version
+  - revised version
+  - corrected version
+  - should read
+  - should say
+  - should state
+  - should mention
+  - should include
+  - could state
+  - could mention
+  - could read
+  - would read better
+  - for example
+  - for instance
+  - e.g.
+  - such as
+  - the answer is
+  - instead write
+  - write that
+  - state that
+  - add a sentence
+  - add the sentence
+  - add a paragraph
+  - you must
+  - make sure to
+  - make sure you
+  - i suggest
+  - i recommend
+  - i would
+  - we suggest
+  - sample sentence
+  - example sentence
+  - model answer
+  - as follows
+
+# Mark / grade language (regular expressions). Any match => reject.
+grade_patterns:
+  - '\bmarks? out of\b'
+  - '\bout of \d+\b'
+  - '\bmark ?bands?\b'
+  - '\bmarkbands?\b'
+  - '\bgrades?\b'
+  - '\bscored?\b'
+  - '\blevel [1-7]\b'
+  - '\b\d+\s*/\s*(6|24)\b'
+
+# Openers that introduce a proposition ("have you considered THAT <claim>?").
+leading_openers:
+  - considered that
+  - consider that
+  - think that
+  - thought that
+  - realise that
+  - realize that
+  - noticed that
+  - notice that
+  - aware that
+  - possible that
+  - be that
+  - true that
+  - agree that
+  - recognise that
+  - recognize that
+  - know that
+  - remember that
+  - fact that
+
+second_person_words: [you, your, yours, yourself, "you're", "you've", "you'd", "you'll"]
+
+wh_words: [how, why, what, which, when, where, who, whom, whose, whether]
+
+# Counted as interrogative only when they start the FIRST clause.
+auxiliary_openers: [does, do, did, is, are, was, were, can, could, would, will, should, has, have, had, might, may]
